@@ -21,8 +21,9 @@
             <td>{{freelancer.nomFreelancer}}</td>
             <td>{{freelancer.salaireFreelancer}}</td>
             <td>{{freelancer.dateinscription | date:'dd/MM/yyyy'}}</td>
-        <td>{{freelancer.domaine?.nomDom}}</td> 
-            <!-- <td><a class="btn btn-danger" (click)="supprimerFreelancer(freelancer)">Supprimer</a></td>
+            <td>{{ freelancer.domaine.nomDom }}</td>
+       <!-- <td>{{freelancer.domaine?.nomDom}}</td> 
+             <td><a class="btn btn-danger" (click)="supprimerFreelancer(freelancer)">Supprimer</a></td>
             <td><a class="btn btn-success" [routerLink]="['/updateFreelancer',freelancer.idFreelancer]">Modifier</a></td> -->
             </tr>
     </tbody>

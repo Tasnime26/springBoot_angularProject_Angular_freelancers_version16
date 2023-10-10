@@ -12,7 +12,7 @@
             <td>{{freelancer.nomFreelancer}}</td>
             <td>{{freelancer.salaireFreelancer}}</td>
             <td>{{freelancer.dateinscription | date:'dd/MM/yyyy'}}</td>
-        <td>{{freelancer.domaine?.nomDom}}</td> 
+            <td>{{ freelancer.domaine.nomDom }}</td>
             <td><a  *ngIf="authService.isAdmin()" class="btn btn-danger" (click)="supprimerFreelancer(freelancer)">Supprimer</a></td>
             <td><a *ngIf="authService.isAdmin()" class="btn btn-success" [routerLink]="['/updateFreelancer',freelancer.idFreelancer]">Modifier</a></td>
             </tr>
